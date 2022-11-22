@@ -1,0 +1,41 @@
+.skeleton{
+    display: grid;
+    margin:5% ;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0.3% 1% ;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+}
+
+.skeleton_img{
+    background-color: #e7edf1;
+    width: 100%;
+    cursor: pointer;
+}
+.skeleton_box{
+    background-color: #e7edf1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 2%;
+}
+
+.skeleton_text{
+    background-color: #e7edf1;
+}
+
+.skeleton_btn{
+    background-color: #e7edf1;
+    outline: none;
+    border: 0ch;
+    border-radius: 5px;
+    height: 30px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+.skeleton_name{
+    background-color: #e7edf1;
+    width: 80%;
+    border-radius: 5px;
+}

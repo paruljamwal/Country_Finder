@@ -8,7 +8,7 @@ const init={
 }
 
 export const countryReducer=(store=init,{type,payload})=>{
-
+// console.log(payload,"red");
     switch (type) {
         case COUNTRYLOAD :
             return{
@@ -21,7 +21,7 @@ export const countryReducer=(store=init,{type,payload})=>{
               ...store,
               loading:false,
               err:false,
-              countryData:payload
+              countryData:[...payload]
             }
         case COUNTRYFAIL:
             return{

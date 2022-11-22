@@ -9,9 +9,11 @@ const loadingCountry=()=>{
 
 
 export const countrySucess=(payload)=>{
+    // console.log("success");
+    // console.log(payload);
     return{
         type: COUNTRYFETCH,
-        payload
+        payload:payload
     }
 }
 
@@ -23,6 +25,7 @@ const countryFail=()=>{
 
 
 export const getCountry=()=>(dispatch)=>{
+
 dispatch(loadingCountry())
   return axios(`https://restcountries.com/v3.1/all`)
   .then((res)=>dispatch(countrySucess(res.data)))
@@ -32,7 +35,7 @@ dispatch(loadingCountry())
 
 export const countryDetails=(payload)=>(dispatch)=>{
     // console.log(payload);
-      return axios(`https://restcountries.com/v3.1/region/${payload.name}`)
+      return axios(`https://restcountries.com/v3.1/${payload}`)
       .then((res)=>dispatch(countrySucess(res.data)))
     }
     
